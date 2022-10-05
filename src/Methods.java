@@ -1,13 +1,18 @@
 public class Methods {
-    boolean isFirstMax (int a , int b) {
-        return (a > b );
+    static int factorial(int n){
+        if (n == 0)
+            return 1;
+        else
+            return(n * factorial(n-1));
     }
+    public static void main(String args[]){
+        int i,fact=1;
+        int number=4;//It is the number to calculate factorial
+        fact = factorial(number);
+        System.out.println("Factorial of "+number+" is: "+fact);
     }
-    class object{
-        public static void main(String[] args) {
-            Methods myObject = new Methods();
-            boolean answer = myObject.isFirstMax(44,10);
-            System.out.println("Answer is " + answer);
-        }
-    }
+}
+
+
+
 
